@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="section">
+  {{ $statusList := where site.RegularPages "Type" "status" }}
+  {{ range first 50 $statusList }}
+  <div class="container mb-6 post">
+    <h1 class="title is-4">
+      <a href="{{.Permalink}}">{{ .Date.Format "02.01.2006 - 15:04" }} | {{ .Title }}</a>
+    </h1>
+
+    <div class="field is-grouped is-grouped-multiline">
+
+      <div class="control">
+        <div class="tags are-medium has-addons">
+          <span class="tag is-dark">Gesamtstatus</span>
+          <span
+            class="tag {{ partial "components/getColor.html" (dict "input" .Params.global) }}">{{ .Params.global }}</span>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags are-medium has-addons">
+          <span class="tag is-dark">Blog</span>
+          <span
+            class="tag {{ partial "components/getColor.html" (dict "input" .Params.blog) }}">{{ .Params.blog }}</span>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags are-medium has-addons">
+          <span class="tag is-dark">Services</span>
+          <span
+            class="tag {{ partial "components/getColor.html" (dict "input" .Params.services) }}">{{ .Params.services }}</span>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags are-medium has-addons">
+          <span class="tag is-dark">News Intervall</span>
+          <span
+            class="tag {{ partial "components/getColor.html" (dict "input" .Params.newsStatus) }}">{{ .Params.newsSchedule }}</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  {{ end }}
+</section>
+{{ end }}

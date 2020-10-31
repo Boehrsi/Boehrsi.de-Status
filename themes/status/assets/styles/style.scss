@@ -1,0 +1,23 @@
+$section-padding: 2rem 1.5rem;
+
+@import "bulma.sass";
+
+.post {
+    padding-bottom: $size-4;
+    margin-bottom: $size-4;
+    border-bottom: 1px solid $border;
+}
+
+.titleLink {
+    color: $primary-invert;
+}
+
+.pageWrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.contentWrapper {
+    flex: 1;
+}

@@ -1,0 +1,14 @@
+{
+    "global": "Online",
+    "blog": "Online",
+    "services": "Online",
+    "news": {
+        "status": "Normal",
+        "schedule": "5-7 pro Woche"
+    },
+    "planned": {
+        "date": "Dezember 2020",
+        "title": "Kotlin Services Tests",
+        "text": "Der Rewrite des Kommentar- und Suchservices wird einem ersten Live-Test unterzogen. Im Rahmen dieses Tests werden die Services nur instabil oder gar nicht verfügbar sein. Geplant ist dieser Test für den Dezember, ein konkretes Datum steht allerdings noch nicht fest. Sobald weitere Informationen vorhanden sind erfolgt ein Update."
+    }
+}

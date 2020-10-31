@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <!-- CSS -->
+  {{ $style := resources.Get "styles/style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>
+
+<body class="pageWrapper">
+  <div class="contentWrapper">
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <a href="/" class="titleLink">{{ .Site.Data.page.title }}</a>
+          </h1>
+          <h2 class="subtitle">{{ .Site.Data.page.subTitle }}</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+
+          <div class="column">
+            <div class="box">
+              <p class="heading">Gesamtstatus</p>
+              <p
+                class="title is-4 {{ partial "components/getTextColor.html" (dict "input" .Site.Data.status.global) }}">
+                {{ .Site.Data.status.global }}</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <p class="heading">Blog</p>
+              <p class="title is-4 {{ partial "components/getTextColor.html" (dict "input" .Site.Data.status.blog) }}">
+                {{ .Site.Data.status.blog }}</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <p class="heading">Server</p>
+              <a class="button" href="https://stats.uptimerobot.com/16xvQh5q9" target="_blank">Live
+                Server Status via Uptime Robot</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <p class="heading">Services</p>
+              <p
+                class="title is-4 {{ partial "components/getTextColor.html" (dict "input" .Site.Data.status.services) }}">
+                {{ .Site.Data.status.services }}</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <p class="heading"> News Intervall</p>
+              <p
+                class="title is-4 {{ partial "components/getTextColor.html" (dict "input" .Site.Data.status.news.status) }}">
+                {{ .Site.Data.status.news.schedule }}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {{ if ne .Site.Data.status.planned.date "" }}
+    <section class="section ">
+      <div class="container">
+        <article class="message">
+          <div class="message-header">
+            <p>Geplante Wartung: {{ .Site.Data.status.planned.date }} | {{ .Site.Data.status.planned.title }}</p>
+          </div>
+          <div class="message-body">{{ .Site.Data.status.planned.text }}</div>
+        </article>
+      </div>
+    </section>
+    {{ end }}
+
+    {{ block "main" . }}
+    <!-- Used by templates e.g. list.html / single.html -->
+    {{ end }}
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="block">Status Updates für <a href="{{ .Site.Data.page.statusUrl }}"
+          class="has-text-weight-bold">{{ .Site.Data.page.statusName }}</a>.</p>
+      <p class="block">
+        Developed by <a href="https://boehrsi.de">Boehrsi</a>, build with <a href="https://bulma.io/">Bulma CSS
+          framework</a> & <a href="https://gohugo.io/">Hugo static site generator</a>
+        and deployed via <a href="https://github.com/">GitHub</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

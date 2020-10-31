@@ -1,0 +1,7 @@
+{{ if or (eq .input "Online") (eq .input "Normal") }}
+    has-text-success
+{{ else if (eq .input "Offline") }}
+    has-text-danger
+{{ else }}
+    has-text-warning
+{{ end }}
