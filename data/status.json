@@ -7,8 +7,8 @@
         "schedule": "5-7 pro Woche"
     },
     "planned": {
-        "date": "Dezember 2020",
-        "title": "Kotlin Services Tests",
-        "text": "Der Rewrite des Kommentar- und Suchservices wird einem ersten Live-Test unterzogen. Im Rahmen dieses Tests werden die Services nur instabil oder gar nicht verfügbar sein. Geplant ist dieser Test für den Dezember, ein konkretes Datum steht allerdings noch nicht fest. Sobald weitere Informationen vorhanden sind erfolgt ein Update."
+        "date": "13. Dezember 2020",
+        "title": "Such-Service Upgrade",
+        "text": "Der neue Such-Service wird einem Live-Test unterzogen und falls funktional aktiv gelassen. Im Rahmen dieser Umstellung wird die Suche nur instabil oder gar nicht verfügbar sein. Die Umstellung erfolgt vermutlich am frühen Nachmittag."
     }
 }
