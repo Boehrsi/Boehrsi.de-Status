@@ -4,6 +4,9 @@
   {{ range first 50 $statusList }}
   <div class="container mb-6 post">
     <h1 class="title is-4">
+      <span class="has-text-light has-background-dark px-2">
+        {{- if eq .Params.state "up" -}}&uarr;{{- else -}}&darr;{{- end -}}
+      </span>
       <a href="{{.Permalink}}">{{ .Date.Format "02.01.2006 - 15:04" }} | {{ .Title }}</a>
     </h1>
 

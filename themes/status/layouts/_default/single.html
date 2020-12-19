@@ -1,7 +1,12 @@
 {{ define "main" }}
 <section class="section">
     <div class="container mb-6">
-        <h1 class="title is-4">{{ .Date.Format "02.01.2006 - 15:04" }} | {{ .Title }}</h1>
+        <h1 class="title is-4">
+            <span class="has-text-light has-background-dark px-2">
+                {{- if eq .Params.state "up" -}}&uarr;{{- else -}}&darr;{{- end -}}
+            </span>
+            {{ .Date.Format "02.01.2006 - 15:04" }} | {{ .Title }}
+        </h1>
         <div class="field is-grouped is-grouped-multiline">
 
             <div class="control">
