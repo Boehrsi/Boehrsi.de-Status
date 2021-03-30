@@ -1,14 +1,14 @@
 {
     "global": "Online",
     "blog": "Online",
-    "services": "Instabil",
+    "services": "Online",
     "news": {
         "status": "Normal",
         "schedule": "5-7 pro Woche"
     },
     "planned": {
-        "date": "30. März 2021",
-        "title": "Kommentar-Service Upgrade",
-        "text": "Der Kommentar-Service erhält ein Funktionsupgrade. Im Rahmen dieser Umstellung wird die Such- und Kommentarfunktion kurzzeitig nur instabil oder gar nicht verfügbar sein. Die Umstellung erfolgt am Vormittag und sollte nur wenige Minuten dauern."
+        "date": "",
+        "title": "",
+        "text": ""
     }
 }
