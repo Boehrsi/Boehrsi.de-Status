@@ -2,3 +2,7 @@ baseURL = "https://status.boehrsi.de/"
 languageCode = "de-de"
 title = "Boehrsi.de Status"
 theme = "status"
+
+[params]
+imprintLink = "https://boehrsi.de/about/impressum/"
+dataProtectionLink = "https://boehrsi.de/about/datenschutzerklaerung/"
