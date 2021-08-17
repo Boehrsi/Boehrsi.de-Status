@@ -3,8 +3,8 @@
     "blog": "Offline",
     "services": "Offline",
     "news": {
-        "status": "Normal",
-        "schedule": "5-7 pro Woche"
+        "status": "Offline",
+        "schedule": "Unbekannt"
     },
     "planned": {
         "date": "",

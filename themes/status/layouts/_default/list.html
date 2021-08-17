@@ -2,6 +2,7 @@
 <section class="section">
   {{ $statusList := where site.RegularPages "Type" "status" }}
   {{ range first 50 $statusList }}
+  {{ $statusDown := eq .Params.state "down"}}
   {{ $statusUp := eq .Params.state "up"}}
   <div class="container post mb-2">
 
@@ -48,7 +49,7 @@
 
     </div>
 
-    {{- if not $statusUp -}}<hr class="m-5">{{- end -}}
+    {{- if $statusDown -}}<hr class="m-5">{{- end -}}
 
   </div>
   {{ end }}
