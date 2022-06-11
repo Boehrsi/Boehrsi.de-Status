@@ -1,7 +1,7 @@
 {
-    "global": "Online",
-    "blog": "Online",
-    "services": "Online",
+    "global": "Instabil",
+    "blog": "Instabil",
+    "services": "Instabil",
     "news": {
         "status": "Normal",
         "schedule": "~5 pro Woche"
