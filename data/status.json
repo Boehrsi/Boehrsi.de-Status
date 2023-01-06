@@ -7,8 +7,8 @@
         "schedule": "~5 pro Woche"
     },
     "planned": {
-        "date": "05.01.2023 - 23:30 Uhr",
-        "title": "Server & Kommentar-Service / Such-Service Update",
-        "text": "Der Kommentar-Service & Such-Service erhalten ein Update. Im Rahmen dieser Umstellung werden die Suche und die Kommentarfunktion nur instabil oder gar nicht verfügbar sein."
+        "date": "",
+        "title": "",
+        "text": ""
     }
 }
