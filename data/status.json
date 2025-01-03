@@ -1,10 +1,10 @@
 {
-    "global": "Online",
-    "blog": "Online",
-    "services": "Online",
+    "global": "Offline",
+    "blog": "Offline",
+    "services": "Offline",
     "news": {
-        "status": "Normal",
-        "schedule": "~3 pro Woche"
+        "status": "Offline",
+        "schedule": "Unbekannt"
     },
     "planned": {
         "date": "",
