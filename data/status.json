@@ -1,6 +1,6 @@
 {
-    "global": "Offline",
-    "blog": "Offline",
+    "global": "Instabil",
+    "blog": "Online",
     "services": "Offline",
     "news": {
         "status": "Offline",
