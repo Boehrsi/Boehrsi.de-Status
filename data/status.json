@@ -1,10 +1,10 @@
 {
-    "global": "Instabil",
+    "global": "Online",
     "blog": "Online",
-    "services": "Offline",
+    "services": "Online",
     "news": {
-        "status": "Offline",
-        "schedule": "Unbekannt"
+        "status": "Online",
+        "schedule": "~3 pro Woche"
     },
     "planned": {
         "date": "",
