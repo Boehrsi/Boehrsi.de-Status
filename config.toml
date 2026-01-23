@@ -6,3 +6,4 @@ theme = "status"
 [params]
 imprintLink = "https://boehrsi.de/about/impressum/"
 dataProtectionLink = "https://boehrsi.de/about/datenschutzerklaerung/"
+liveStatusLink = "https://stats.uptimerobot.com/16xvQh5q9"
